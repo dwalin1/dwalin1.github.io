@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Daniel Walin</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	http://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+	text-align: justify;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+	text-align: justify;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					2700 Le Conte Ave Apt. 405 <br>
+					Berkeley, CA 94709
+				</div>
+				
+				<div class="col-sm-5">
+					<h1>
+						Daniel Walin
+					</h1>
+				
+					<h2>
+						Web Developer
+					</h2>		
+				</div>
+				
+				<div class="col-sm-3">
+					<a href="mailto:dwalin1@gmail.com">dwalin1@gmail.com</a> <br>
+					(254) 548 5065
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="content" class="container">
+	
+	<section id="projects" class="row">
+		<aside class="col-sm-3">
+			<h3>Projects</h3>
+		</aside>
+		<div class="col-sm-9">
+			
+		Raddit
+			| <a href="http://raddit.co">live</a>
+			| <a href="https://github.com/dwalin1/Reddit-Clone">github</a>
+		<p>Reddit clone in Backbone and Rails. Infinite scroll, comments in deeply nested subviews. Uses a custom-built version of <code>counter_cache</code> so that one Vote model with type up or down can update one total upvotes cache column on the Post or Comment model (also uses polymorphic associations).</p> <br>
+		
+		Asteroids
+		| <a href="https://github.com/dwalin1/Asteroids">github</a>
+		<p>Classic arcade game in Javascript and HTML canvas. Modular and object-oriented, with extensive use of inheritance through surrogates. Vector algebra.</p> <br>
+		
+		ActiveRecord Lite
+		| <a href="https://github.com/dwalin1/ActiveRecord-Lite">github</a>
+		<p>Builds the basic functionality of ActiveRecord in Ruby. Metaprogramming with extensive use of <code>#define_method</code>, <code>#send</code>, including and extending modules.</p>
+		
+		</div>
+	</section>
+	
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				
+				<div class="col-sm-4">
+					
+					<strong class="network">
+						Tumblr
+					</strong>
+					
+					
+					<div class="username">
+						
+						<div class="url">
+							<a href="http://thejaggedhedgehog.tumblr.com/">thejaggedhedgehog</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-4">
+					
+					<strong class="network">
+						Github
+					</strong>
+					
+					
+					<div class="username">
+						
+						<div class="url">
+							<a href="https://github.com/dwalin1">dwalin1</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-4">
+					
+					<strong class="network">
+						LinkedIn
+					</strong>
+					
+					
+					<div class="username">
+						
+						<div class="url">
+							<a href="https://www.linkedin.com/pub/daniel-walin/9a/814/5a4
+">Daniel Walin</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			
+			<div class="col-sm-6">
+				
+				<div class="name">
+					<h4>Back End</h4>
+				</div>
+				
+				
+				<ul class="keywords">
+					
+					<li>Ruby</li>
+					
+					<li>Ruby on Rails</li>
+					
+					<li>SQL</li>
+					
+					<li>Git</li>
+
+					<li>jbuilder</li>
+					
+				</ul>
+				
+			</div>
+			
+			<div class="col-sm-6">
+				
+				<div class="name">
+					<h4>Front End</h4>
+				</div>
+				
+				
+				<ul class="keywords">
+					
+					<li>Javascript</li>
+					
+					<li>jQuery</li>
+					
+					<li>Backbone.js</li>
+					
+					<li>HTML</li>
+					
+					<li>CSS</li>
+					
+				</ul>
+				
+			</div>
+			
+			</div>
+		</div>
+	</section>
+	
+
+	
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UC Berkeley</span>
+					<span class="date">
+						Aug. 2012 — May 2014
+					</span>
+				</h4>
+				
+				<div class="position">
+										
+					<a href="http://www.classics.berkeley.edu/people/daniel-walin">
+						Lecturer in Classics
+					</a>
+				</div>
+		
+								
+				<ul class="highlights">
+					<li class="bullet">Designed and taught courses</li>
+					<li class="bullet">Built a Django app for teaching Latin morphology</li>		
+				</ul>
+				
+			</div>
+			
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UC Berkeley</span>
+					<span class="date">
+						May 2012
+					</span>
+				</h4>
+				
+				<div class="area">
+					Classics
+				</div>
+				
+				
+				<div class="studyType">
+					PhD
+				</div>
+				
+				
+			</div>
+			
+			</div>
+		</div>
+	</section>
+
+	</div>
+	
+	</body>
+</html>
