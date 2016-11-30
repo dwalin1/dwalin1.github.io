@@ -1,0 +1,19 @@
+{
+  "name": "My Integration",
+  "description": "An integration that does wonderful things",
+  "key": "com.example.myintegration",
+  "links": {
+    "homepage": "https://example.com/myintegration",
+    "self": "https://example.com/myintegration/capabilities"
+  },
+  "capabilities": {
+    "hipchatApiConsumer": {
+      "scopes": [
+        "send_notification"
+      ]
+    },
+    "installable": {
+    	"callbackUrl": "http://requestb.in/1jyncwd1"
+    }
+  }
+}
