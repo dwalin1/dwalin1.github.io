@@ -1,0 +1,29 @@
+{
+  "name": "Daniel Walin",
+  "description": "Integrate Daniel Walin with Hipchat",
+  "key": "com.danielwalin.yay",
+  "links": {
+    "self": "https:\/\/www.danielwalin.com\/hc-descriptor.json"
+  },
+  "vendor": {
+    "name": "Daniel Walin, Tester of Things",
+    "url": "https:\/\/www.danielwalin.com"
+  },
+  "capabilities": {
+    "hipchatApiConsumer": {
+      "scopes": [
+        "send_notification",
+        "send_message",
+        "view_group",
+        "view_room",
+        "view_messages"
+      ]
+    },
+    "installable": {
+      "allowGlobal": false,
+      "allowRoom": true,
+      "callbackUrl": "http://requestb.in/1c221bw1",
+      "installedUrl": "http://requestb.in/v310ecv3"
+    }
+  }
+}
